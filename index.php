@@ -2,11 +2,22 @@
 
 require_once __DIR__ . '/models/Movie.php';
 
+$moviesList = [
+    new Movie('Il Signore degli Anelli',     'Fantasy', 180, 2000, 10),
+    new Movie('The Exorcism of Emily Rose',  'Horror',  120, 1989, 4),
+    new Movie('Mad Max - Fury Road',         'Action',  140, 2010, 7),
+];
+
+
+
+var_dump($moviesList);
 
 ?>
 
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +30,8 @@ require_once __DIR__ . '/models/Movie.php';
     <link rel="shortcut icon" href="assets/img/movie_favic.png" type="png">
     <title>Movies</title>
 </head>
-<body>
-    
+
+<body class="bg-dark">
+
 </body>
 </html>
