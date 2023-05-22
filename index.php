@@ -45,7 +45,7 @@ $moviesList = [
                     <th scope="col">Title</th>
                     <th scope="col">Category</th>
                     <th scope="col">Other Category</th>
-                    <th scope="col">Length</th>
+                    <th scope="col">Duration</th>
                     <th scope="col">Release Year</th>
                     <th scope="col">Average Vote</th>
                 </tr>
@@ -56,7 +56,7 @@ $moviesList = [
                     <th scope="row"><?php echo $movie->title ?></th>
                     <td><?php echo $movie->category ?></td>
                     <td><?php echo $movie->otherCategory->otherCategory ?? '---' ?></td>
-                    <td><small><em><?php echo $movie->length?></em></small></td>
+                    <td><small><em><?php echo $movie->duration?></em></small></td>
                     <td><?php echo $movie->releaseYear ?></td>
                     <td><?php echo $movie->averageVote ?></td>
                 </tr>

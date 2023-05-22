@@ -6,16 +6,16 @@ class Movie {
 
     public $title;
     public $category;
-    public $length;
+    public $duration;
     public $releaseYear;
     public $averageVote;
     public $otherCategory;
     
-    public function __construct($_title, $_category, $_length, $_releaseYear, $_averageVote, CategoryBonus $_otherCategory = null )
+    public function __construct($_title, $_category, $_duration, $_releaseYear, $_averageVote, CategoryBonus $_otherCategory = null )
     {
         $this->title            = $_title;
         $this->category         = $_category;
-        $this->length           = $this->convertTime($_length);
+        $this->duration           = $this->convertTime($_duration);
         $this->releaseYear      = $_releaseYear;
         $this->averageVote      = $_averageVote;
         $this->otherCategory    = $_otherCategory;
@@ -26,10 +26,10 @@ class Movie {
     //     return 'Title:' . ' ' . $this->title . ' - ' . 'Category:' . ' ' . $this->category . ' - ' . 'Length:' . ' ' . $this->length . ' - ' . 'Release Year:' . ' ' . $this->releaseYear . ' - ' . 'Average Vote:' . ' ' . $this->averageVote;
     // }
 
-    public function convertTime($length) {
+    public function convertTime($duration) {
 
         $zero    = new DateTime('@0');
-        $offset  = new DateTime('@' . $length * 60);
+        $offset  = new DateTime('@' . $duration * 60);
         $diff    = $zero->diff($offset);
         return $diff->format('%hh %Im');
     }
