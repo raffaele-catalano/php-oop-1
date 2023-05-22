@@ -3,7 +3,7 @@
 require_once __DIR__ . '/models/Movie.php';
 // require_once __DIR__ . '/models/Category-Bonus.php';
 
-require_once __DIR__ . '/db.php'
+require_once __DIR__ . '/data/db.php'
 
 
 
