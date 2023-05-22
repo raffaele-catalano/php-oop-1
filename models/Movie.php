@@ -18,7 +18,7 @@ class Movie {
         $this->length           = $this->convertTime($_length);
         $this->releaseYear      = $_releaseYear;
         $this->averageVote      = $_averageVote;
-        $this->otherCategory      = $_otherCategory;
+        $this->otherCategory    = $_otherCategory;
 
     }
 
@@ -31,7 +31,7 @@ class Movie {
         $zero    = new DateTime('@0');
         $offset  = new DateTime('@' . $length * 60);
         $diff    = $zero->diff($offset);
-        return $diff->format('%h.%I');
+        return $diff->format('%hh %Im');
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/models/Movie.php';
-require_once __DIR__ . '/models/Category-Bonus.php';
+// require_once __DIR__ . '/models/Category-Bonus.php';
 
 $moviesList = [
     new Movie('The Lord of the Rings',       'Fantasy',  178, 2001, 9.8, new CategoryBonus('Dramatic')),
